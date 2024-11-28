@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo de Crochê - Edna</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Catalogo de Crochê da Vó Edna</h1>
+    </header>
+
+    <section id="produtos">
+        <div class="produto" onclick="openModal('produto1')">
+            <img src="https://via.placeholder.com/200x200.png?text=Produto+1" alt="Produto 1">
+            <h3>Produto 1</h3>
+        </div>
+        <div class="produto" onclick="openModal('produto2')">
+            <img src="https://via.placeholder.com/200x200.png?text=Produto+2" alt="Produto 2">
+            <h3>Produto 2</h3>
+        </div>
+        <div class="produto" onclick="openModal('produto3')">
+            <img src="https://via.placeholder.com/200x200.png?text=Produto+3" alt="Produto 3">
+            <h3>Produto 3</h3>
+        </div>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-img" src="" alt="">
+            <div id="modal-info">
+                <h3 id="modal-title"></h3>
+                <a href="https://wa.me/1234567890" target="_blank" class="btn-whatsapp">Comprar no WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
